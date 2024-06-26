@@ -1,5 +1,4 @@
-import SingleBlog from "@/components/Blog/SingleBlog";
-import blogData from "@/components/Blog/blogData";
+
 import Breadcrumb from "@/components/Common/BreadCrumb";
 
 import { Metadata } from "next";
@@ -20,7 +19,7 @@ const Blog = () => {
 
       <section className="pb-[120px] pt-[120px]">
         <div className="container">
-          <div className="-mx-4 flex flex-wrap justify-center">
+          {/* <div className="-mx-4 flex flex-wrap justify-center">
             {blogData.map((blog) => (
               <div
                 key={blog.id}
@@ -29,7 +28,7 @@ const Blog = () => {
                 <SingleBlog blog={blog} />
               </div>
             ))}
-          </div>
+          </div> */}
 
           <div className="-mx-4 flex flex-wrap" data-wow-delay=".15s">
             <div className="w-full px-4">
