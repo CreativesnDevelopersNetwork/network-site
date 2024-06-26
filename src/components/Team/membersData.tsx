@@ -15,7 +15,7 @@ const featuresData: Feature[] = [
     ),
     title: "Software Developers",
     paragraph:
-      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
+      "",
   },
   {
     id: 1,
