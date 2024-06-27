@@ -9,6 +9,7 @@ import Hero from "@/components/Hero";
 import Header from "@/components/Header";
 
 import { Metadata } from "next";
+import SectionThree from "@/components/About/SectionThree";
 
 export const metadata: Metadata = {
   title: "Creatives & Developers Network",
@@ -25,6 +26,7 @@ export default function Home() {
       <Brands />
       <SectionOne />
       <SectionTwo />
+      <SectionThree />
       {/* <Testimonials /> */}
       {/* <Pricing /> */}
       {/* <Blog /> */}
