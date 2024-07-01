@@ -9,6 +9,8 @@ import Hero from "@/components/Hero";
 import Header from "@/components/Header";
 
 import { Metadata } from "next";
+import SectionThree from "@/components/About/SectionThree";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Creatives & Developers Network",
@@ -22,13 +24,15 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <Features />
-      <Brands />
       <SectionOne />
       <SectionTwo />
+      <SectionThree />
+      <Brands />
       {/* <Testimonials /> */}
       {/* <Pricing /> */}
       {/* <Blog /> */}
       <Contact />
+      <Footer />
     </>
   );
 }

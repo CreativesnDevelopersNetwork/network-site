@@ -1,8 +1,10 @@
 import AboutSectionOne from "@/components/About/SectionOne";
 import AboutSectionTwo from "@/components/About/SectionTwo";
+import AboutSectionThree from "@/components/About/SectionThree";
 import Breadcrumb from "@/components/Common/BreadCrumb";
 
 import { Metadata } from "next";
+import Brands from "@/components/Brands";
 
 export const metadata: Metadata = {
   title: "About",
@@ -13,12 +15,18 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <>
-      <Breadcrumb
+      {/**
+       * <Breadcrumb
         pageName="About"
         description="Here we meet the backbone of it all."
       />
+       * 
+      */}
       <AboutSectionOne />
       <AboutSectionTwo />
+      <AboutSectionThree />
+      
+      <Brands />
     </>
   );
 };

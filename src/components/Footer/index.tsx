@@ -7,19 +7,19 @@ const Footer = () => {
     <>
       <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-20 lg:pt-24">
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
-              <div className="mb-12 max-w-[360px] lg:mb-16">
+          <div className="mx-4 flex flex-wrap">
+            {/* <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
+              <div className="px-8 mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
                   <Image
-                    src="/images/logo/logo-2.svg"
+                    src="/images/logo/IMG_4675.png"
                     alt="logo"
                     className="w-full dark:hidden"
                     width={140}
                     height={30}
                   />
                   <Image
-                    src="/images/logo/logo.svg"
+                    src="/images/logo/IMG_4675.png"
                     alt="logo"
                     className="hidden w-full dark:block"
                     width={140}
@@ -107,10 +107,38 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
+            </div> */}
+            
+            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-6/12">
+              <div className="px-8 mb-12  lg:mb-16">
+              <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                  Contact
+              </h2>
+              <ul className="space-y-4 text-gray-700">
+                <li className="flex items-center">
+                  <svg className="w-6 h-6 mr-2 text-gray-600" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                  </svg>
+                  <p>Glorious Court(4)8-14, Cedar Estates, Santeo, Accra, Ghana.</p>
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-6 h-6 mr-2 text-gray-600" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-1 4l-7 4.5L5 8V6l7 4.5L19 6v2z" />
+                  </svg>
+                  <p>Email: peni@cndnetwork.com</p>
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-6 h-6 mr-2 text-gray-600" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M6.62 10.79a15.464 15.464 0 006.99 6.99l1.98-1.98c.2-.2.51-.25.77-.15 1.13.37 2.34.57 3.58.57.55 0 1 .45 1 1v3.5c0 .55-.45 1-1 1C11.1 22 2 12.9 2 2c0-.55.45-1 1-1H6.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.58.1.26.05.57-.15.77l-1.98 1.98z" />
+                  </svg>
+                  <p>Phone: +233 324 712 0258</p>
+                </li>
+              </ul>
+              </div>
             </div>
 
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
+            <div className=" w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+              <div className="px-8 mb-12 max-w-[360px] lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
                   Useful Links
                 </h2>
@@ -144,7 +172,7 @@ const Footer = () => {
             </div>
 
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
+              <div className="px-8 mb-12 max-w-[360px] lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
                   Terms
                 </h2>
@@ -177,8 +205,8 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
-              <div className="mb-12 lg:mb-16">
+            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-2/12">
+              <div className="px-8 mb-12 max-w-[360px] lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
                   Support & Help
                 </h2>

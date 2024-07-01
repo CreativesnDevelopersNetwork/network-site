@@ -1,61 +1,35 @@
 import Image from "next/image";
+import SingleFeature from "../Features/SingleFeature";
+import featuresData from "../Features/featuresData";
 
 const SectionTwo = () => {
   return (
-    <section className="py-16 md:py-20 lg:py-28">
+    <section className="py-16 md:py-20 lg:py-28 px-4 sm:px-8 md:px-16 lg:px-28">
       <div className="container">
-        <div className="-mx-4 flex flex-wrap items-center">
-          <div className="w-full px-4 lg:w-1/2">
-            <div
-              className="relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0"
-              data-wow-delay=".15s"
-            >
-              <Image
-                src="/images/about/about-image-2.svg"
-                alt=""
-                fill
-                className="drop-shadow-three dark:hidden dark:drop-shadow-none"
-              />
-              <Image
-                src="/images/about/about-image-2-dark.svg"
-                alt=""
-                fill
-                className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
-              />
-            </div>
+          <h2 className="mb-16 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+          Our Services -
+          </h2>
+          <div className="grid grid-cols-1 gap-12">
+            {featuresData.map((feature, index) => (
+              <div key={feature.id} className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center justify-center">
+                <div className="flex items-center justify-center w-full">
+                  <div className="w-full h-auto relative">
+                    <Image
+                      src={`/images/image${index}.png`}
+                      alt="image"
+                      width={360}
+                      height={360}
+                      className="w-full object-cover object-center"
+                    />
+                  </div>
+                </div>
+            
+                <div className="flex items-center justify-center w-full">
+                  <SingleFeature feature={feature} />
+                </div>
+              </div>
+            ))}
           </div>
-          <div className="w-full px-4 lg:w-1/2">
-            <div className="max-w-[470px]">
-              <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Bug free code
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Premier support
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
-                </p>
-              </div>
-              <div className="mb-1">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Next.js
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
-                  consectetur adipiscing elit setim.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
